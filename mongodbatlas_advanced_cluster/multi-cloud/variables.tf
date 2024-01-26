@@ -14,7 +14,7 @@ variable "private_key" {
 variable "cluster_name" {
   description = "Atlas cluster name"
   type        = string
-  default     = "MultiCloudCluster"
+  default     = "TestCluster-1"
 }
 variable "region_name" {
   type        = string
@@ -60,4 +60,9 @@ variable "node_count" {
   type        = number
   description = "node count"
   default = 1
+}
+variable "collection_name" {
+  type        = string
+  description = "collection_name"
+  default = "collection_test"
 }

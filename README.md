@@ -7,4 +7,3 @@ export TF_VAR_private_key="not-a-real-private-key"
 export TF_VAR_public_key="not-a-real-public-key"
 ```
 4. terraform init --> plan --> apply --> destroy
-

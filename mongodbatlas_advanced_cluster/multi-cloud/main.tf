@@ -5,7 +5,7 @@ provider "mongodbatlas" {
 
 resource "mongodbatlas_advanced_cluster" "test" {
   project_id   = mongodbatlas_project.project.id
-  name         = "Cluster-2"
+  name         = var.cluster_name
   cluster_type = "REPLICASET"
 
   replication_specs {
